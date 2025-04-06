@@ -43,14 +43,14 @@ body {
 
 /* === Set default theme variables === */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 /* === DARK MODE OVERRIDE === */
-.dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
+.light {
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 /* === Use the theme variables in base elements === */
