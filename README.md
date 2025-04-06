@@ -36,7 +36,7 @@
 
 ## 🧪 Live Demo
 
-Coming soon on [Vercel](https://vercel.com)
+[Vercel](https://threecraft.vercel.app/)
 
 ---
 
