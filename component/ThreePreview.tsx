@@ -1,0 +1,46 @@
+"use client";
+
+import dynamic from "next/dynamic";
+
+const Cube = dynamic(() => import("./animations/Cube"), { ssr: false });
+const Galaxy = dynamic(() => import("./animations/Galaxy"), { ssr: false });
+const Waves = dynamic(() => import("./animations/Waves"), { ssr: false });
+const Sphere = dynamic(() => import("./animations/Sphere"), { ssr: false });
+const MorphingBlobScene = dynamic(
+  () => import("./animations/MorphingBlobScene"),
+  {
+    ssr: false,
+  }
+);
+const DeveloperWorkspaceScene = dynamic(
+  () => import("./animations/DeveloperWorkspace"),
+  {
+    ssr: false,
+  }
+);
+type Props = {
+  slug?: string;
+};
+
+export const ThreePreview = ({ slug }: Props) => {
+  switch (slug) {
+    case "cube":
+      return <Cube />;
+    case "galaxy":
+      return <Galaxy />;
+    case "waves":
+      return <Waves />;
+    case "sphere":
+      return <Sphere />;
+    case "morphingBlobScene":
+      return <MorphingBlobScene />;
+    case "developerWorkspace":
+      return <DeveloperWorkspaceScene />;
+    default:
+      return (
+        <div className="text-center py-12">
+          Select an animation from dashboard
+        </div>
+      );
+  }
+};
