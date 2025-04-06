@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 ThreeCraft – Interactive 3D Animations & Dashboard
 
-## Getting Started
+**ThreeCraft** is a modern web experience built with **Next.js**, **Three.js**, and **Framer Motion**, offering a dynamic collection of interactive 3D animations, beautiful transitions, and a user-friendly dashboard — all enhanced with dark/light mode support and clean, responsive UI.
 
-First, run the development server:
+---
+
+## 🧠 Features
+
+- 🎨 **Interactive 3D Animations** with **Three.js**
+- 🌗 **Dark/Light Mode Toggle** using Context API
+- 🎞️ **Framer Motion UI** for page transitions and effects
+- 🖋️ **Typewriter Hero Text** with `react-simple-typewriter`
+- 📱 **Responsive Layout** for all devices
+- 🔗 **View More** link redirects to `/dashboard`
+- 📂 Easy-to-understand folder structure with modular components
+
+---
+
+## ⚙️ Tech Stack
+
+- **Next.js 14** with App Router
+- **Tailwind CSS** for styling
+- **Three.js** for 3D animations
+- **Framer Motion** for transitions
+- **Lucide Icons** for iconography
+- **React Simple Typewriter** for typing effects
+- **TypeScript**
+
+---
+
+## 🗂️ Folder Structure
+
+📦 threecraft ├── app │ ├── layout.tsx │ ├── page.tsx │ └── theme-provider.tsx ├── components │ ├── Header.tsx │ ├── HeroSection.tsx │ ├── AnimationPreviews.tsx │ └── Footer.tsx ├── public │ ├── galaxy.png │ ├── cube.png │ ├── waves.png │ └── sphere.png ├── styles │ └── globals.css ├── pages │ └── dashboard.tsx
+
+---
+
+## 🧪 Live Demo
+
+Coming soon on [Vercel](https://vercel.com)
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
 
 ```bash
+git clone https://github.com/yourusername/threecraft.git
+cd threecraft
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
