@@ -19,7 +19,7 @@ const DeveloperWorkspaceScene = dynamic(
   }
 );
 type Props = {
-  slug?: string;
+  slug?: string | undefined;
 };
 
 export const ThreePreview = ({ slug }: Props) => {
