@@ -9,6 +9,7 @@ const templates = [
   "sphere",
   "morphingBlobScene",
   "developerWorkspace",
+  "mysticOrbitals",
 ];
 
 export const TemplateSwitcher = () => {
