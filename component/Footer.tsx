@@ -10,10 +10,7 @@ export const Footer = () => {
       transition={{ duration: 0.5, delay: 0.3 }}
       className="w-full px-6 py-3 bg-zinc-950 border-t border-zinc-800 text-sm text-center text-zinc-400"
     >
-      <p>
-        &copy; {new Date().getFullYear()} Three.js Showcase. Built with ❤️ by
-        You.
-      </p>
+      <p>&copy; {new Date().getFullYear()} ThreeCraft. Built with ❤️ by You.</p>
     </motion.footer>
   );
 };

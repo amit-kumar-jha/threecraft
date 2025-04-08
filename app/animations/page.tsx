@@ -6,6 +6,7 @@ import {
   DEVELOPERWORKSPACE,
   GALAXY,
   MORPHINGBLOBSCENE,
+  MYSTICORBITALS,
   SPHERE,
   WAVES,
 } from "@/public";
@@ -49,6 +50,12 @@ const animations = [
     slug: "developerWorkspace",
     description: "Animated developerWorkspace motion",
     preview: DEVELOPERWORKSPACE,
+  },
+  {
+    title: "MysticOrbitals",
+    slug: "mysticOrbitals",
+    description: "Animated MysticOrbitals motion",
+    preview: MYSTICORBITALS,
   },
 ];
 

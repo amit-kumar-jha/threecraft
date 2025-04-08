@@ -18,6 +18,9 @@ const DeveloperWorkspaceScene = dynamic(
     ssr: false,
   }
 );
+const MysticOrbitals = dynamic(() => import("./animations/MysticOrbitals"), {
+  ssr: false,
+});
 type Props = {
   slug?: string | undefined;
 };
@@ -36,6 +39,9 @@ export const ThreePreview = ({ slug }: Props) => {
       return <MorphingBlobScene />;
     case "developerWorkspace":
       return <DeveloperWorkspaceScene />;
+
+    case "mysticOrbitals":
+      return <MysticOrbitals />;
     default:
       return (
         <div className="text-center py-12">
