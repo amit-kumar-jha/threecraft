@@ -7,6 +7,7 @@ import {
   GALAXY,
   MORPHINGBLOBSCENE,
   MYSTICORBITALS,
+  ORBITPULSE,
   SPHERE,
   WAVES,
 } from "@/public";
@@ -56,6 +57,12 @@ const animations = [
     slug: "mysticOrbitals",
     description: "Animated MysticOrbitals motion",
     preview: MYSTICORBITALS,
+  },
+  {
+    title: "OrbitPulse",
+    slug: "orbitPulse",
+    description: "Animated orbitPulse motion",
+    preview: ORBITPULSE,
   },
 ];
 
