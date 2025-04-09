@@ -21,6 +21,10 @@ const DeveloperWorkspaceScene = dynamic(
 const MysticOrbitals = dynamic(() => import("./animations/MysticOrbitals"), {
   ssr: false,
 });
+const OrbitPulse = dynamic(() => import("./animations/OrbitPulse"), {
+  ssr: false,
+});
+
 type Props = {
   slug?: string | undefined;
 };
@@ -42,6 +46,9 @@ export const ThreePreview = ({ slug }: Props) => {
 
     case "mysticOrbitals":
       return <MysticOrbitals />;
+    case "orbitPulse":
+      return <OrbitPulse />;
+
     default:
       return (
         <div className="text-center py-12">
