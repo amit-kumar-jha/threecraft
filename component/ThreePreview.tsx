@@ -25,7 +25,7 @@ const OrbitPulse = dynamic(() => import("./animations/OrbitPulse"), {
   ssr: false,
 });
 
-const CardVerse = dynamic(() => import("./animations/CardVerse "), {
+const CardVerse = dynamic(() => import("./animations/CardVerse"), {
   ssr: false,
 });
 
