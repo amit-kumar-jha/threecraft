@@ -503,13 +503,12 @@ export const codeMap: Record<string, string> = {
     export default OrbitPulse;
     `,
   cardVerse: `"use client";
-import React, { useRef, useState } from "react";
+
+import React, { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Html, OrbitControls, Float, Stars } from "@react-three/drei";
-// import { EffectComposer, Bloom, SSAO } from "@react-three/postprocessing";
 import * as THREE from "three";
-import { animated, useSpring } from "@react-spring/three";
-// import { useControls } from "leva";
+import gsap from "gsap";
 
 interface CardProps {
   position: [number, number, number];
@@ -530,21 +529,32 @@ const FloatingCard: React.FC<CardProps> = ({
   const [flipped, setFlipped] = useState(false);
   const [hovered, setHovered] = useState(false);
 
-  const { rotation } = useSpring({
-    rotation: flipped ? Math.PI : 0,
-    config: { mass: 5, tension: 500, friction: 80 },
-  });
-
-  const { scale } = useSpring({
-    scale: hovered ? 1.1 : 1,
-    config: { mass: 1, tension: 170, friction: 12 },
-  });
-
+  // Handle flipping with GSAP
   const handleClick = () => {
-    setFlipped(!flipped);
+    setFlipped((prev) => !prev);
+    gsap.to(meshRef.current.rotation, {
+      y: flipped ? 0 : Math.PI,
+      duration: 1,
+      ease: "power2.inOut",
+    });
+
     if (link && !flipped) window.open(link, "_blank");
   };
 
+  // Handle hover scaling with GSAP
+  useEffect(() => {
+    if (!meshRef.current) return;
+
+    gsap.to(meshRef.current.scale, {
+      x: hovered ? 1.1 : 1,
+      y: hovered ? 1.1 : 1,
+      z: hovered ? 1.1 : 1,
+      duration: 0.4,
+      ease: "power1.out",
+    });
+  }, [hovered]);
+
+  // Floating animation
   useFrame(() => {
     if (meshRef.current) {
       meshRef.current.position.y =
@@ -554,19 +564,16 @@ const FloatingCard: React.FC<CardProps> = ({
 
   return (
     <Float speed={2} rotationIntensity={0.3} floatIntensity={0.6}>
-      <animated.mesh
+      <mesh
         ref={meshRef}
         position={position}
-        scale={scale}
-        rotation-y={rotation}
         onPointerOver={() => setHovered(true)}
         onPointerOut={() => setHovered(false)}
         onClick={handleClick}
-        cursor="pointer"
+        // cursor="pointer"
       >
         <boxGeometry args={[1, 1, 0.2]} />
         <meshPhysicalMaterial
-          //   color={hovered ? "#2ecc71" : "#3498db"}
           roughness={0}
           transmission={1}
           thickness={0.4}
@@ -574,7 +581,7 @@ const FloatingCard: React.FC<CardProps> = ({
           metalness={0.2}
         />
 
-        {/* Glowing edges */}
+        {/* Glowing wireframe box */}
         <mesh>
           <boxGeometry args={[2.55, 2.55, 0.41]} />
           <meshBasicMaterial
@@ -585,6 +592,7 @@ const FloatingCard: React.FC<CardProps> = ({
           />
         </mesh>
 
+        {/* HTML overlay */}
         <Html center>
           {!flipped ? (
             <div
@@ -615,12 +623,12 @@ const FloatingCard: React.FC<CardProps> = ({
             </div>
           )}
         </Html>
-      </animated.mesh>
+      </mesh>
     </Float>
   );
 };
 
-const TorusRing = () => {
+const CardVerse = () => {
   return (
     <Canvas camera={{ position: [0, 2, 10], fov: 50 }}>
       <color attach="background" args={["#000"]} />
@@ -628,20 +636,18 @@ const TorusRing = () => {
       <directionalLight position={[2, 5, 5]} intensity={1.2} />
       <OrbitControls enableZoom={false} />
       <Stars radius={100} depth={50} count={3000} factor={3} fade />
-      {/* <PostEffects /> */}
+
       <FloatingCard
         position={[-3, 0, 0]}
         title="Portfolio"
         description="Click to see more"
         backText="React + Three.js + Fiber"
-        //   link="https://portfolio.com"
       />
       <FloatingCard
         position={[0, 0, 0]}
         title="Resume Builder"
         description="AI + PDF Export"
         backText="Next.js + GPT + Tailwind"
-        //   link="https://resumeapp.com"
       />
       <FloatingCard
         position={[3, 0, 0]}
@@ -653,6 +659,6 @@ const TorusRing = () => {
   );
 };
 
-export default TorusRing;
+export default CardVerse;
 `,
 };
