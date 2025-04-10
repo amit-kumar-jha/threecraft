@@ -14,7 +14,9 @@ export default async function AnimationPage({ params }: AnimationProps) {
       <TemplateSwitcher />
       <div className="flex flex-1 flex-col md:flex-row overflow-hidden">
         <div className="w-full md:w-1/2 min-h-150 p-4 border-b md:border-b-0 md:border-r border-zinc-200 dark:border-zinc-700">
-          <ThreePreview slug={slug} />
+          <div className="w-full h-150 bg-black">
+            <ThreePreview slug={slug} />
+          </div>
         </div>
         <div className="w-full md:w-1/2 p-4 overflow-y-auto">
           <CodeViewer />

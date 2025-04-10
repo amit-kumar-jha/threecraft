@@ -69,39 +69,37 @@ const Scene: React.FC = () => {
 
 const MysticOrbitals: React.FC = () => {
   return (
-    <div className="w-full h-180 -mt-12">
-      <Canvas shadows camera={{ position: [0, 4, 6], fov: 75 }}>
-        <ambientLight intensity={0.3} />
-        <directionalLight
-          castShadow
-          position={[5, 10, 5]}
-          intensity={1.2}
-          shadow-mapSize-width={1024}
-          shadow-mapSize-height={1024}
-          shadow-camera-far={20}
-        />
+    <Canvas shadows camera={{ position: [0, 4, 6], fov: 75 }}>
+      <ambientLight intensity={0.3} />
+      <directionalLight
+        castShadow
+        position={[5, 10, 5]}
+        intensity={1.2}
+        shadow-mapSize-width={1024}
+        shadow-mapSize-height={1024}
+        shadow-camera-far={20}
+      />
 
-        <PresentationControls
-          global
-          damping={0.5}
-          snap={false}
-          rotation={[0, 0.3, 0]}
-          polar={[-0.4, 0.2]}
-          azimuth={[-1, 1]}
-        >
-          <Scene />
-        </PresentationControls>
+      <PresentationControls
+        global
+        damping={0.5}
+        snap={false}
+        rotation={[0, 0.3, 0]}
+        polar={[-0.4, 0.2]}
+        azimuth={[-1, 1]}
+      >
+        <Scene />
+      </PresentationControls>
 
-        <ContactShadows
-          position={[0, -1.9, 0]}
-          opacity={0.4}
-          scale={15}
-          blur={1.5}
-          far={4}
-        />
-        <Environment preset="sunset" />
-      </Canvas>
-    </div>
+      <ContactShadows
+        position={[0, -1.9, 0]}
+        opacity={0.4}
+        scale={15}
+        blur={1.5}
+        far={4}
+      />
+      <Environment preset="sunset" />
+    </Canvas>
   );
 };
 

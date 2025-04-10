@@ -77,25 +77,16 @@ const OrbitPulse = () => {
   const cameraGroup = useRef<THREE.Group>(null);
 
   return (
-    <div className="w-full h-130 flex items-center justify-center bg-black">
-      <Canvas camera={{ position: [0, 0, 6], fov: 60 }}>
-        <group ref={cameraGroup}>
-          <ambientLight intensity={1.2} />
-          <pointLight position={[5, 5, 5]} intensity={1.5} />
-          <Stars
-            radius={100}
-            depth={50}
-            count={1000}
-            factor={4}
-            fade
-            speed={1}
-          />
-          <CoreSphere />
-          <OrbitingSpheres />
-          <OrbitControls enableZoom={false} enablePan={false} />
-        </group>
-      </Canvas>
-    </div>
+    <Canvas camera={{ position: [0, 0, 6], fov: 60 }}>
+      <group ref={cameraGroup}>
+        <ambientLight intensity={1.2} />
+        <pointLight position={[5, 5, 5]} intensity={1.5} />
+        <Stars radius={100} depth={50} count={1000} factor={4} fade speed={1} />
+        <CoreSphere />
+        <OrbitingSpheres />
+        <OrbitControls enableZoom={false} enablePan={false} />
+      </group>
+    </Canvas>
   );
 };
 

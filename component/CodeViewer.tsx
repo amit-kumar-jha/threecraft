@@ -21,7 +21,7 @@ export const CodeViewer = () => {
   };
 
   return (
-    <div className="relative h-full max-h-[500px] overflow-auto scrollbar-thin scrollbar-thumb-zinc-600 scrollbar-track-zinc-900 rounded-lg bg-zinc-800 text-white p-4 text-sm whitespace-pre-wrap">
+    <div className="relative h-150 overflow-auto scrollbar-thin scrollbar-thumb-zinc-600 scrollbar-track-zinc-900 rounded-lg bg-zinc-800 text-white p-4 text-sm whitespace-pre-wrap">
       <button
         onClick={handleCopy}
         className="absolute top-2 right-2 text-zinc-300 hover:text-white bg-zinc-700 hover:bg-zinc-600 rounded-md p-2 transition"
@@ -29,7 +29,6 @@ export const CodeViewer = () => {
       >
         <FiCopy />
       </button>
-
       <pre>
         <code>{code}</code>
       </pre>

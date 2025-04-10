@@ -58,13 +58,11 @@ const Blob = () => {
 
 export default function MorphingBlobScene() {
   return (
-    <div className="h-[500px] w-full bg-gradient-to-br from-zinc-900 to-black rounded-xl shadow-xl">
-      <Canvas camera={{ position: [0, 0, 5], fov: 60 }}>
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[5, 5, 5]} intensity={1} />
-        <Blob />
-        <OrbitControls enableZoom={false} />
-      </Canvas>
-    </div>
+    <Canvas camera={{ position: [0, 0, 5], fov: 60 }}>
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[5, 5, 5]} intensity={1} />
+      <Blob />
+      <OrbitControls enableZoom={false} />
+    </Canvas>
   );
 }
