@@ -88,18 +88,16 @@ const ResponsiveCameraControls = () => {
 
 const SolarSystem = () => {
   return (
-    <div className="w-full h-[100dvh] sm:h-screen bg-black">
-      <Canvas camera={{ position: [0, 2, 8], fov: 60 }}>
-        <ambientLight intensity={0.5} />
-        <pointLight position={[5, 5, 5]} intensity={2} />
-        <Stars radius={100} depth={50} count={1000} factor={4} fade speed={1} />
-        <Sun />
-        {planets.map((planet, i) => (
-          <Planet key={i} {...planet} index={i} />
-        ))}
-        <ResponsiveCameraControls />
-      </Canvas>
-    </div>
+    <Canvas camera={{ position: [0, 2, 8], fov: 60 }}>
+      <ambientLight intensity={0.5} />
+      <pointLight position={[5, 5, 5]} intensity={2} />
+      <Stars radius={100} depth={50} count={1000} factor={4} fade speed={1} />
+      <Sun />
+      {planets.map((planet, i) => (
+        <Planet key={i} {...planet} index={i} />
+      ))}
+      <ResponsiveCameraControls />
+    </Canvas>
   );
 };
 

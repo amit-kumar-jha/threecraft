@@ -2,6 +2,7 @@
 
 import { AnimationCard } from "@/component/AnimationCard";
 import {
+  CARDVERSE,
   CUBE,
   DEVELOPERWORKSPACE,
   GALAXY,
@@ -63,6 +64,12 @@ const animations = [
     slug: "orbitPulse",
     description: "Animated orbitPulse motion",
     preview: ORBITPULSE,
+  },
+  {
+    title: "CardVerse",
+    slug: "cardVerse",
+    description: "Animated cardVerse motion",
+    preview: CARDVERSE,
   },
 ];
 
