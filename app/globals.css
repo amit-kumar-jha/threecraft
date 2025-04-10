@@ -11,8 +11,8 @@
 
 /* === Light MODE OVERRIDE === */
 .light {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 /* === Use the theme variables in base elements === */
