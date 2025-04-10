@@ -2,10 +2,9 @@
 import React, { useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Html, OrbitControls, Float, Stars } from "@react-three/drei";
-// import { EffectComposer, Bloom, SSAO } from "@react-three/postprocessing";
+
 import * as THREE from "three";
 import { animated, useSpring } from "@react-spring/three";
-// import { useControls } from "leva";
 
 interface CardProps {
   position: [number, number, number];
