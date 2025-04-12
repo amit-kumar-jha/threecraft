@@ -8,3 +8,5 @@ export { default as DEVELOPERWORKSPACE } from "./developerWorkspace.gif";
 export { default as MYSTICORBITALS } from "./mysticOrbitals.gif";
 export { default as ORBITPULSE } from "./orbitPulse.gif";
 export { default as CARDVERSE } from "./cardVerse.gif";
+export { default as BOT } from "./bot.gif";
+export { default as HOLOCORE } from "./holoCore.gif";

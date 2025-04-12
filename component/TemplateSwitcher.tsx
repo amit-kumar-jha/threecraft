@@ -12,6 +12,8 @@ const templates = [
   "mysticOrbitals",
   "orbitPulse",
   "cardVerse",
+  "bot",
+  "holoCore",
 ];
 
 export const TemplateSwitcher = () => {
