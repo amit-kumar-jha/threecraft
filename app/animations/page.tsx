@@ -2,10 +2,12 @@
 
 import { AnimationCard } from "@/component/AnimationCard";
 import {
+  BOT,
   CARDVERSE,
   CUBE,
   DEVELOPERWORKSPACE,
   GALAXY,
+  HOLOCORE,
   MORPHINGBLOBSCENE,
   MYSTICORBITALS,
   ORBITPULSE,
@@ -70,6 +72,18 @@ const animations = [
     slug: "cardVerse",
     description: "Animated cardVerse motion",
     preview: CARDVERSE,
+  },
+  {
+    title: "Bot",
+    slug: "bot",
+    description: "Animated bot motion",
+    preview: BOT,
+  },
+  {
+    title: "HoloCore",
+    slug: "holoCore",
+    description: "Animated holoCore motion",
+    preview: HOLOCORE,
   },
 ];
 
