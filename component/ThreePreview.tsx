@@ -29,6 +29,13 @@ const CardVerse = dynamic(() => import("./animations/CardVerse"), {
   ssr: false,
 });
 
+const Bot = dynamic(() => import("./animations/Bot"), {
+  ssr: false,
+});
+const HoloCore = dynamic(() => import("./animations/HoloCore"), {
+  ssr: false,
+});
+
 type Props = {
   slug?: string | undefined;
 };
@@ -54,6 +61,10 @@ export const ThreePreview = ({ slug }: Props) => {
     case "cardVerse":
       return <CardVerse />;
 
+    case "bot":
+      return <Bot />;
+    case "holoCore":
+      return <HoloCore />;
     default:
       return (
         <div className="text-center py-12">
