@@ -10,6 +10,7 @@ import {
   HOLOCORE,
   MORPHINGBLOBSCENE,
   MYSTICORBITALS,
+  NEURALNETWORKPULSE,
   ORBITPULSE,
   SPHERE,
   WAVES,
@@ -84,6 +85,12 @@ const animations = [
     slug: "holoCore",
     description: "Animated holoCore motion",
     preview: HOLOCORE,
+  },
+  {
+    title: "NeuralNetworkPulse",
+    slug: "neuralNetworkPulse",
+    description: "Animated neuralNetworkPulse motion",
+    preview: NEURALNETWORKPULSE,
   },
 ];
 
