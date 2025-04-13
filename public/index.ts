@@ -10,4 +10,4 @@ export { default as ORBITPULSE } from "./orbitPulse.gif";
 export { default as CARDVERSE } from "./cardVerse.gif";
 export { default as BOT } from "./bot.gif";
 export { default as HOLOCORE } from "./holoCore.gif";
-export { default as NEURALNETWORKPULSE } from "./NeuralNetworkPulse.gif";
+export { default as NEURALNETWORKPULSE } from "./neuralNetworkPulse.gif";
