@@ -35,6 +35,12 @@ const Bot = dynamic(() => import("./animations/Bot"), {
 const HoloCore = dynamic(() => import("./animations/HoloCore"), {
   ssr: false,
 });
+const NeuralNetworkPulse = dynamic(
+  () => import("./animations/NeuralNetworkPulse"),
+  {
+    ssr: false,
+  }
+);
 
 type Props = {
   slug?: string | undefined;
@@ -65,6 +71,9 @@ export const ThreePreview = ({ slug }: Props) => {
       return <Bot />;
     case "holoCore":
       return <HoloCore />;
+    case "neuralNetworkPulse":
+      return <NeuralNetworkPulse />;
+
     default:
       return (
         <div className="text-center py-12">

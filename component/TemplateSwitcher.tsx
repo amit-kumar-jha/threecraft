@@ -14,6 +14,7 @@ const templates = [
   "cardVerse",
   "bot",
   "holoCore",
+  "neuralNetworkPulse",
 ];
 
 export const TemplateSwitcher = () => {
