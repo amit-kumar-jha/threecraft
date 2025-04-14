@@ -13,6 +13,7 @@ import {
   NEURALNETWORKPULSE,
   ORBITPULSE,
   SPHERE,
+  TIMEVORTEX,
   WAVES,
 } from "@/public";
 import { motion } from "framer-motion";
@@ -91,6 +92,12 @@ const animations = [
     slug: "neuralNetworkPulse",
     description: "Animated neuralNetworkPulse motion",
     preview: NEURALNETWORKPULSE,
+  },
+  {
+    title: "TimeVortex",
+    slug: "timeVortex",
+    description: "Animated timeVortex motion",
+    preview: TIMEVORTEX,
   },
 ];
 

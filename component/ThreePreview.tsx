@@ -41,6 +41,9 @@ const NeuralNetworkPulse = dynamic(
     ssr: false,
   }
 );
+const TimeVortex = dynamic(() => import("./animations/TimeVortex"), {
+  ssr: false,
+});
 
 type Props = {
   slug?: string | undefined;
@@ -73,6 +76,8 @@ export const ThreePreview = ({ slug }: Props) => {
       return <HoloCore />;
     case "neuralNetworkPulse":
       return <NeuralNetworkPulse />;
+    case "timeVortex":
+      return <TimeVortex />;
 
     default:
       return (
