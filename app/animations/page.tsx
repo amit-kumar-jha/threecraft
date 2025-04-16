@@ -7,6 +7,7 @@ import {
   COSMICTREEGALAXY,
   CUBE,
   DEVELOPERWORKSPACE,
+  DREAMCATCHERNEBULA,
   GALAXY,
   HOLOCORE,
   MORPHINGBLOBSCENE,
@@ -105,6 +106,12 @@ const animations = [
     slug: "cosmicTreeGalaxy",
     description: "Animated cosmicTreeGalaxy motion",
     preview: COSMICTREEGALAXY,
+  },
+  {
+    title: "DreamCatcherNebula",
+    slug: "dreamCatcherNebula",
+    description: "Animated dreamCatcherNebula motion",
+    preview: DREAMCATCHERNEBULA,
   },
 ];
 

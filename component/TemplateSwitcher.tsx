@@ -17,6 +17,7 @@ const templates = [
   "neuralNetworkPulse",
   "timeVortex",
   "cosmicTreeGalaxy",
+  "dreamCatcherNebula",
 ];
 
 export const TemplateSwitcher = () => {

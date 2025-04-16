@@ -50,6 +50,12 @@ const CosmicTreeGalaxy = dynamic(
     ssr: false,
   }
 );
+const DreamCatcherNebula = dynamic(
+  () => import("./animations/DreamCatcherNebula"),
+  {
+    ssr: false,
+  }
+);
 
 type Props = {
   slug?: string | undefined;
@@ -86,6 +92,8 @@ export const ThreePreview = ({ slug }: Props) => {
       return <TimeVortex />;
     case "cosmicTreeGalaxy":
       return <CosmicTreeGalaxy />;
+    case "dreamCatcherNebula":
+      return <DreamCatcherNebula />;
 
     default:
       return (
