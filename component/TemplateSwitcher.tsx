@@ -16,6 +16,7 @@ const templates = [
   "holoCore",
   "neuralNetworkPulse",
   "timeVortex",
+  "cosmicTreeGalaxy",
 ];
 
 export const TemplateSwitcher = () => {
