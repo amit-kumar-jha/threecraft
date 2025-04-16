@@ -12,3 +12,4 @@ export { default as BOT } from "./bot.gif";
 export { default as HOLOCORE } from "./holoCore.gif";
 export { default as NEURALNETWORKPULSE } from "./neuralNetworkPulse.gif";
 export { default as TIMEVORTEX } from "./timeVortex.gif";
+export { default as COSMICTREEGALAXY } from "./cosmicTreeGalaxy.gif";

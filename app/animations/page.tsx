@@ -4,6 +4,7 @@ import { AnimationCard } from "@/component/AnimationCard";
 import {
   BOT,
   CARDVERSE,
+  COSMICTREEGALAXY,
   CUBE,
   DEVELOPERWORKSPACE,
   GALAXY,
@@ -98,6 +99,12 @@ const animations = [
     slug: "timeVortex",
     description: "Animated timeVortex motion",
     preview: TIMEVORTEX,
+  },
+  {
+    title: "CosmicTreeGalaxy",
+    slug: "cosmicTreeGalaxy",
+    description: "Animated cosmicTreeGalaxy motion",
+    preview: COSMICTREEGALAXY,
   },
 ];
 
