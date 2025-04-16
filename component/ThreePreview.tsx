@@ -44,6 +44,12 @@ const NeuralNetworkPulse = dynamic(
 const TimeVortex = dynamic(() => import("./animations/TimeVortex"), {
   ssr: false,
 });
+const CosmicTreeGalaxy = dynamic(
+  () => import("./animations/CosmicTreeGalaxy"),
+  {
+    ssr: false,
+  }
+);
 
 type Props = {
   slug?: string | undefined;
@@ -78,6 +84,8 @@ export const ThreePreview = ({ slug }: Props) => {
       return <NeuralNetworkPulse />;
     case "timeVortex":
       return <TimeVortex />;
+    case "cosmicTreeGalaxy":
+      return <CosmicTreeGalaxy />;
 
     default:
       return (
