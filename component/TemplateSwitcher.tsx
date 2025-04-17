@@ -18,6 +18,7 @@ const templates = [
   "timeVortex",
   "cosmicTreeGalaxy",
   "dreamCatcherNebula",
+  "interactive3DNav",
 ];
 
 export const TemplateSwitcher = () => {

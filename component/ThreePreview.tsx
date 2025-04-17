@@ -56,6 +56,12 @@ const DreamCatcherNebula = dynamic(
     ssr: false,
   }
 );
+const Interactive3DNav = dynamic(
+  () => import("./animations/Interactive3DNav"),
+  {
+    ssr: false,
+  }
+);
 
 type Props = {
   slug?: string | undefined;
@@ -94,6 +100,8 @@ export const ThreePreview = ({ slug }: Props) => {
       return <CosmicTreeGalaxy />;
     case "dreamCatcherNebula":
       return <DreamCatcherNebula />;
+    case "interactive3DNav":
+      return <Interactive3DNav />;
 
     default:
       return (
