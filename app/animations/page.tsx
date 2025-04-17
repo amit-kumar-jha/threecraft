@@ -10,6 +10,7 @@ import {
   DREAMCATCHERNEBULA,
   GALAXY,
   HOLOCORE,
+  Interactive3DNav,
   MORPHINGBLOBSCENE,
   MYSTICORBITALS,
   NEURALNETWORKPULSE,
@@ -112,6 +113,12 @@ const animations = [
     slug: "dreamCatcherNebula",
     description: "Animated dreamCatcherNebula motion",
     preview: DREAMCATCHERNEBULA,
+  },
+  {
+    title: "Interactive3DNav",
+    slug: "interactive3DNav",
+    description: "Animated interactive3DNav motion",
+    preview: Interactive3DNav,
   },
 ];
 
