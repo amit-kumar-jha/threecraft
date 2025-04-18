@@ -19,6 +19,7 @@ const templates = [
   "cosmicTreeGalaxy",
   "dreamCatcherNebula",
   "interactive3DNav",
+  "revealEffect",
 ];
 
 export const TemplateSwitcher = () => {

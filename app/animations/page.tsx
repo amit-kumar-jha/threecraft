@@ -15,6 +15,7 @@ import {
   MYSTICORBITALS,
   NEURALNETWORKPULSE,
   ORBITPULSE,
+  REVEALEFFECT,
   SPHERE,
   TIMEVORTEX,
   WAVES,
@@ -119,6 +120,12 @@ const animations = [
     slug: "interactive3DNav",
     description: "Animated interactive3DNav motion",
     preview: Interactive3DNav,
+  },
+  {
+    title: "RevealEffect",
+    slug: "revealEffect",
+    description: "Animated revealEffect motion",
+    preview: REVEALEFFECT,
   },
 ];
 
