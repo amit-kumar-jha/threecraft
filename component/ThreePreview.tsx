@@ -62,6 +62,9 @@ const Interactive3DNav = dynamic(
     ssr: false,
   }
 );
+const RevealEffect = dynamic(() => import("./animations/RevealEffect"), {
+  ssr: false,
+});
 
 type Props = {
   slug?: string | undefined;
@@ -87,7 +90,6 @@ export const ThreePreview = ({ slug }: Props) => {
       return <OrbitPulse />;
     case "cardVerse":
       return <CardVerse />;
-
     case "bot":
       return <Bot />;
     case "holoCore":
@@ -102,6 +104,8 @@ export const ThreePreview = ({ slug }: Props) => {
       return <DreamCatcherNebula />;
     case "interactive3DNav":
       return <Interactive3DNav />;
+    case "revealEffect":
+      return <RevealEffect />;
 
     default:
       return (
