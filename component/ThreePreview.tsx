@@ -65,6 +65,9 @@ const Interactive3DNav = dynamic(
 const RevealEffect = dynamic(() => import("./animations/RevealEffect"), {
   ssr: false,
 });
+const EarthCanvas = dynamic(() => import("./animations/Earth"), {
+  ssr: false,
+});
 
 type Props = {
   slug?: string | undefined;
@@ -106,6 +109,8 @@ export const ThreePreview = ({ slug }: Props) => {
       return <Interactive3DNav />;
     case "revealEffect":
       return <RevealEffect />;
+    case "earthCanvas":
+      return <EarthCanvas />;
 
     default:
       return (

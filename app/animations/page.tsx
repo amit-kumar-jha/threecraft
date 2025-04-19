@@ -8,6 +8,7 @@ import {
   CUBE,
   DEVELOPERWORKSPACE,
   DREAMCATCHERNEBULA,
+  EARTHCANVAS,
   GALAXY,
   HOLOCORE,
   Interactive3DNav,
@@ -126,6 +127,12 @@ const animations = [
     slug: "revealEffect",
     description: "Animated revealEffect motion",
     preview: REVEALEFFECT,
+  },
+  {
+    title: "EarthCanvas",
+    slug: "earthCanvas",
+    description: "Animated earthCanvas",
+    preview: EARTHCANVAS,
   },
 ];
 
