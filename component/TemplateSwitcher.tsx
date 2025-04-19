@@ -20,6 +20,7 @@ const templates = [
   "dreamCatcherNebula",
   "interactive3DNav",
   "revealEffect",
+  "earthCanvas",
 ];
 
 export const TemplateSwitcher = () => {
