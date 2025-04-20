@@ -68,6 +68,9 @@ const RevealEffect = dynamic(() => import("./animations/RevealEffect"), {
 const EarthCanvas = dynamic(() => import("./animations/Earth"), {
   ssr: false,
 });
+const Dragon = dynamic(() => import("./animations/AnimatedDragonFly"), {
+  ssr: false,
+});
 
 type Props = {
   slug?: string | undefined;
@@ -111,6 +114,8 @@ export const ThreePreview = ({ slug }: Props) => {
       return <RevealEffect />;
     case "earthCanvas":
       return <EarthCanvas />;
+    case "dragon":
+      return <Dragon />;
 
     default:
       return (

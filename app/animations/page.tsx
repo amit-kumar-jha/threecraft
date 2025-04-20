@@ -7,6 +7,7 @@ import {
   COSMICTREEGALAXY,
   CUBE,
   DEVELOPERWORKSPACE,
+  DRAGON,
   DREAMCATCHERNEBULA,
   EARTHCANVAS,
   GALAXY,
@@ -133,6 +134,12 @@ const animations = [
     slug: "earthCanvas",
     description: "Animated earthCanvas",
     preview: EARTHCANVAS,
+  },
+  {
+    title: "Dragon",
+    slug: "dragon",
+    description: "Animated dragon",
+    preview: DRAGON,
   },
 ];
 
