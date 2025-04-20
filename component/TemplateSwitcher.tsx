@@ -21,6 +21,7 @@ const templates = [
   "interactive3DNav",
   "revealEffect",
   "earthCanvas",
+  "dragon",
 ];
 
 export const TemplateSwitcher = () => {
