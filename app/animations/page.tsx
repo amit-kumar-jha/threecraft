@@ -1,6 +1,7 @@
 "use client";
 
 import { AnimationCard } from "@/component/AnimationCard";
+
 import {
   BOT,
   CARDVERSE,
@@ -144,6 +145,8 @@ const animations = [
 ];
 
 export default function DashboardPage() {
+  // const [cubeCode, setCubeCode] = useState("");
+
   return (
     <main className="min-h-screen p-6 pb-4 bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white">
       <motion.h1
