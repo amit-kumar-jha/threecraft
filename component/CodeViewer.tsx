@@ -4,12 +4,51 @@ import { usePathname } from "next/navigation";
 // import { useState } from "react";
 import toast from "react-hot-toast";
 import { FiCopy } from "react-icons/fi";
-import { codeMap } from "./data/AnimationsData";
+// import { codeMap } from "./data/AnimationsData";
+import { useEffect, useState } from "react";
+import { doc, DocumentData, getDoc } from "firebase/firestore";
+import { db } from "@/lib/firebase";
 
 export const CodeViewer = () => {
   const pathname = usePathname();
   const slug = pathname.split("/").pop() || "";
-  const code = codeMap[slug] || "// No code available for this animation";
+
+  const [animaData, setAnimaData] = useState<DocumentData | null>(null);
+
+  const fetchAnimaData = async () => {
+    console.log("Function called ✅");
+
+    try {
+      const docRef = doc(db, "AnimationsData", "anima");
+      const docSnap = await getDoc(docRef);
+
+      console.log("docSnap received:", docSnap);
+
+      if (docSnap.exists()) {
+        console.log("Data:", docSnap.data());
+        return docSnap.data();
+      } else {
+        console.log("No such document!");
+        return null;
+      }
+    } catch (error) {
+      console.error("Error fetching anima data:", error);
+      return null;
+    }
+  };
+
+  useEffect(() => {
+    const fetch = async () => {
+      const data = await fetchAnimaData();
+      setAnimaData(data);
+    };
+
+    fetch();
+  }, []);
+
+  console.log(animaData);
+
+  const code = animaData?.[slug] || "Loading...";
 
   const handleCopy = async () => {
     try {
