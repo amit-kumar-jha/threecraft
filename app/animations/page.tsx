@@ -12,6 +12,7 @@ import {
   DREAMCATCHERNEBULA,
   EARTHCANVAS,
   GALAXY,
+  GALAXYGENERATOR,
   HOLOCORE,
   Interactive3DNav,
   MORPHINGBLOBSCENE,
@@ -146,7 +147,7 @@ const animations = [
     title: "GalaxyGenerator",
     slug: "galaxyGenerator",
     description: "Animated galaxyGenerator",
-    preview: DRAGON,
+    preview: GALAXYGENERATOR,
   },
 ];
 
