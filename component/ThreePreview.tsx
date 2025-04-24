@@ -72,6 +72,10 @@ const Dragon = dynamic(() => import("./animations/AnimatedDragonFly"), {
   ssr: false,
 });
 
+const GalaxyGenerator = dynamic(() => import("./animations/GalaxyGenerator"), {
+  ssr: false,
+});
+
 type Props = {
   slug?: string | undefined;
 };
@@ -116,6 +120,8 @@ export const ThreePreview = ({ slug }: Props) => {
       return <EarthCanvas />;
     case "dragon":
       return <Dragon />;
+    case "galaxyGenerator":
+      return <GalaxyGenerator />;
 
     default:
       return (

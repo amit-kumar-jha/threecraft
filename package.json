@@ -6,13 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postinstall": "npm install --legacy-peer-deps"
   },
   "dependencies": {
     "@react-email/components": "^0.0.36",
     "@react-three/drei": "^10.0.5",
     "@react-three/fiber": "^9.1.1",
     "@react-three/postprocessing": "^3.0.4",
+    "dat.gui": "^0.7.9",
     "firebase": "^11.6.0",
     "framer-motion": "^12.6.3",
     "gsap": "^3.12.7",
@@ -30,12 +32,13 @@
     "react-simple-typewriter": "^5.0.1",
     "resend": "^4.2.0",
     "simplex-noise": "^4.0.3",
-    "three": "^0.175.0",
-    "three-stdlib": "^2.35.15"
+    "three": "^0.176.0",
+    "three-stdlib": "^2.35.16"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4",
+    "@types/dat.gui": "^0.7.13",
     "@types/howler": "^2.2.12",
     "@types/node": "^20",
     "@types/prismjs": "^1.26.5",

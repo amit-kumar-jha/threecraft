@@ -142,6 +142,12 @@ const animations = [
     description: "Animated dragon",
     preview: DRAGON,
   },
+  {
+    title: "GalaxyGenerator",
+    slug: "galaxyGenerator",
+    description: "Animated galaxyGenerator",
+    preview: DRAGON,
+  },
 ];
 
 export default function DashboardPage() {
