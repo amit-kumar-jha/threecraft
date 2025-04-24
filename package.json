@@ -32,7 +32,7 @@
     "react-simple-typewriter": "^5.0.1",
     "resend": "^4.2.0",
     "simplex-noise": "^4.0.3",
-    "three": "^0.176.0",
+    "three": "^0.174.0",
     "three-stdlib": "^2.35.16"
   },
   "devDependencies": {
