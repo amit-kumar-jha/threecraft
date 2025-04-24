@@ -18,3 +18,4 @@ export { default as Interactive3DNav } from "./interactive3DNav.gif";
 export { default as REVEALEFFECT } from "./revealEffect.gif";
 export { default as EARTHCANVAS } from "./earthCanvas.gif";
 export { default as DRAGON } from "./dragon.gif";
+export { default as GALAXYGENERATOR } from "./galaxyGenerator.gif";
