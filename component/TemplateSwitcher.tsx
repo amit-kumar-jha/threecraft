@@ -22,6 +22,7 @@ const templates = [
   "revealEffect",
   "earthCanvas",
   "dragon",
+  "galaxyGenerator",
 ];
 
 export const TemplateSwitcher = () => {
